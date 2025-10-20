@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkGuardian Pro - الحماية الذكية للروابط</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="cyber-3d-theme">
+    <!-- الخلفية المتحركة -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- الهيدر المجسم -->
+    <header class="glass-header">
+        <div class="header-container">
+            <div class="logo-3d">
+                <div class="logo-icon">🛡️</div>
+                <div class="logo-text">
+                    <h1 class="neon-text">LinkGuardian</h1>
+                    <p class="tagline">الحماية المتقدمة للروابط الملغومة</p>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="stat-3d">
+                    <div class="stat-number" id="totalScanned">1,247</div>
+                    <div class="stat-label">رابط تم فحصه</div>
+                </div>
+                <div class="stat-3d">
+                    <div class="stat-number" id="accuracyRate">98.3%</div>
+                    <div class="stat-label">دقة الكشف</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- البطاقة الرئيسية المجسمة -->
+    <main class="main-3d">
+        <div class="scan-card-3d">
+            <!-- الجزء الأمامي من البطاقة -->
+            <div class="card-front">
+                <div class="card-header">
+                    <h2 class="card-title">🔍 فحص الروابط الذكي</h2>
+                    <div class="card-subtitle">اكتشاف التهديدات قبل فتح الرابط</div>
+                </div>
+
+                <!-- مدخل الرابط -->
+                <div class="url-input-3d">
+                    <div class="input-container">
+                        <input type="url" id="urlInput" placeholder="https://example.com" class="url-input-field">
+                        <div class="input-decoration"></div>
+                    </div>
+                    <button class="scan-btn-3d" id="scanBtn">
+                        <span class="btn-glow"></span>
+                        <span class="btn-text">بدء الفحص</span>
+                        <span class="btn-icon">🚀</span>
+                    </button>
+                </div>
+
+                <!-- مؤشرات سريعة -->
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-info">
+                            <div class="stat-value">0.8s</div>
+                            <div class="stat-label">متوسط وقت الفحص</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-info">
+                            <div class="stat-value">99%</div>
+                            <div class="stat-label">معدل الدقة</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الجزء الخلفي (النتائج) -->
+            <div class="card-back" id="resultsCard">
+                <div class="results-header">
+                    <h3>📊 نتائج الفحص</h3>
+                    <div class="result-badge" id="resultBadge">-</div>
+                </div>
+
+                <div class="results-3d">
+                    <div class="result-meter">
+                        <div class="meter-container">
+                            <div class="meter-fill" id="safetyMeter"></div>
+                            <div class="meter-text" id="safetyScore">0%</div>
+                        </div>
+                        <div class="meter-labels">
+                            <span>خطير</span><span>آمن</span>
+                        </div>
+                    </div>
+
+                    <div class="threat-breakdown">
+                        <h4>🔬 تحليل التهديدات</h4>
+                        <div class="threat-list" id="threatList">
+                            <!-- سيتم تعبئته بالجافاسكريبت -->
+                        </div>
+                    </div>
+
+                    <div class="security-recommendations">
+                        <h4>💡 التوصيات الأمنية</h4>
+                        <div class="recommendations-list" id="recommendationsList">
+                            <!-- سيتم تعبئته بالجافاسكريبت -->
+                        </div>
+                    </div>
+                </div>
+
+                <button class="new-scan-btn" id="newScanBtn">
+                    🔄 فحص رابط جديد
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- قسم المميزات -->
+    <section class="features-section">
+        <div class="features-container">
+            <h3>✨ لماذا تختار LinkGuardian؟</h3>
+            <div class="features-grid">
+                <div class="feature-card-3d" data-feature="ai">
+                    <div class="feature-icon">🤖</div>
+                    <h4>ذكاء اصطناعي متقدم</h4>
+                    <p>نستخدم أحدث نماذج التعلم الآلي للكشف عن التهديدات</p>
+                    <div class="feature-details">
+                        <p>✅ كشف التصيد الإلكتروني</p>
+                        <p>✅ تحليل السلوك المشبوه</p>
+                        <p>✅ تحديث تلقائي للنماذج</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card-3d" data-feature="speed">
+                    <div class="feature-icon">⚡</div>
+                    <h4>فحص فوري</h4>
+                    <p>نتائج خلال ثوانٍ بدون الحاجة لتحميل الصفحة</p>
+                    <div class="feature-details">
+                        <p>✅ فحص في أقل من ثانية</p>
+                        <p>✅ لا حاجة للانتظار</p>
+                        <p>✅ نتائج فورية</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card-3d" data-feature="protection">
+                    <div class="feature-icon">🛡️</div>
+                    <h4>حماية شاملة</h4>
+                    <p>كشف للتصيد الإلكتروني والبرمجيات الخبيثة</p>
+                    <div class="feature-details">
+                        <p>✅ كشف الروابط الملغومة</p>
+                        <p>✅ تحليل البرمجيات الخبيثة</p>
+                        <p>✅ حماية من التصيد</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card-3d" data-feature="reports">
+                    <div class="feature-icon">📊</div>
+                    <h4>تقارير مفصلة</h4>
+                    <p>تحليل كامل مع توصيات أمنية مخصصة</p>
+                    <div class="feature-details">
+                        <p>✅ تقارير تفصيلية</p>
+                        <p>✅ تحليل المخاطر</p>
+                        <p>✅ توصيات مخصصة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <p>© 2025 LinkGuardian Pro - مشروع احمد مثنى واحمد فاضل</p>
+            <p class="footer-note">🔬 أداة تعليمية للأغراض الأكاديمية والبحثية</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
